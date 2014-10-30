@@ -1,0 +1,79 @@
+.data p {
+  border-radius: 15px;
+  padding: 0.5em;
+  min-width: 300px;
+  max-width: 800px; }
+
+/* Indentation classes */
+.depth-1 {
+  padding-left: 100px; }
+
+.depth-2 {
+  padding-left: 200px; }
+
+.depth-3 {
+  padding-left: 300px; }
+
+.depth-4 {
+  padding-left: 400px; }
+
+.depth-5 {
+  padding-left: 500px; }
+
+.depth-6 {
+  padding-left: 600px; }
+
+.depth-7 {
+  padding-left: 700px; }
+
+.depth-8 {
+  padding-left: 800px; }
+
+.depth-9 {
+  padding-left: 900px; }
+
+.depth-10 {
+  padding-left: 1000px; }
+
+.depth-11 {
+  padding-left: 1100px; }
+
+.depth-12 {
+  padding-left: 1200px; }
+
+.depth-13 {
+  padding-left: 1300px; }
+
+.depth-14 {
+  padding-left: 1400px; }
+
+/* End indentation classes */
+.string p {
+  background-color: #ff0000;
+  color: #4dffff; }
+
+.number p {
+  background-color: #1400ff;
+  color: #f3ff4d; }
+
+.boolean p {
+  background-color: #00ff14;
+  color: #ff4df3; }
+
+.array p {
+  background-color: #ebff00;
+  color: #554dff; }
+
+.object p {
+  background-color: #00ebff;
+  color: #ff554d; }
+
+.null p {
+  background-color: #888;
+  color: #aeaeae; }
+
+.undefined p {
+  background-color: #555;
+  color: #7b7b7b; }
+
+/*# sourceMappingURL=main.css.map */

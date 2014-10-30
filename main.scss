@@ -1,0 +1,62 @@
+// Mixins
+
+@mixin object($background: "#000") {
+    p {
+        background-color: #{$background};
+        color: complement(lighten($background, 15%));
+    }
+}
+
+// Placeholders
+
+%data {
+    p {
+        border-radius: 15px;
+        padding: .5em;
+        min-width: 300px;
+        max-width: 800px;
+    }
+}
+
+// Generators
+
+
+/* Indentation classes */
+@for $i from 1 to 15 {
+    .depth-#{$i} {
+        padding-left: $i * 100px;   
+    }
+}
+/* End indentation classes */
+
+.data {
+    @extend %data;
+}
+
+.string {
+    @include object(#ff0000);
+}
+
+.number {
+    @include object(#1400ff);
+}
+
+.boolean {
+    @include object(#00ff14);
+}
+
+.array {
+    @include object(#ebff00);
+}
+
+.object {
+    @include object(#00ebff)
+}
+
+.null {
+    @include object(#888)
+}
+
+.undefined {
+    @include object(#555)
+}
