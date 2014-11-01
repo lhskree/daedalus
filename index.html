@@ -8,6 +8,10 @@
     
         <meta charset='utf-8'>
         
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+        
         <link type='text/css' rel='stylesheet' href='./main.css'>
         
         <script src='./jquery-2.1.1.min.js'></script>
@@ -20,15 +24,20 @@
     
     <body>
         
-        <h1>Enter JSON to interpret.</h1>
-        <form action='#'>
-            <textarea></textarea><br>
-            <input class='submit' type='submit' value='Parse JSON'>
-        </form>
+        <h1 class='title'>Daedalus</h1>
+            <div class='entryArea'>
+                <img src='./lebrun_daedalus.jpg' alt='Daeduls affixes wax wings to his son, Icarus, in a painting by Charles le Brun'>
+                <textarea></textarea><br>
+            </div>
+        <button class='submit'>Interpret JSON</button>
+        
+        <span class='errInvalidJSON'>Looks like your JSON isn't valid...maybe this can help?</span>
+        <iframe class='jsonLint' src='http://jsonlint.com/'></iframe>
         
         <div class='interpretation'>
-        
         </div>
+        
+        
     </body>
 
 </html>

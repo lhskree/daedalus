@@ -2,6 +2,8 @@ var json = "";
 
 $( document ).ready( function () {
     var $interpret = $( '.interpretation' );
+    var $linter = $( '.jsonLin' );
+    var $errMsg = $( '.errInvalidJSON');
     
     $( '.submit' ).click( function (evt) {
         json = $( 'textarea' ).val();
