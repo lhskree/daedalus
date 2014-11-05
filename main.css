@@ -52,13 +52,28 @@ html, body {
   margin: 0;
   padding: 1em 3em;
   background-color: #222; }
+  @media screen and (max-width: 900px) {
+    html, body {
+      padding: 1em 0; } }
 
 .title {
   font: normal small-caps normal 6em/1.2em 'Forum', serif;
   letter-spacing: 0.09em;
   color: #fff;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
   text-align: center; }
+  @media screen and (max-width: 900px) {
+    .title {
+      font-size: 4em; } }
+
+.instructions {
+  font: normal 2em/1em 'Forum', Georgia, serif;
+  color: #fff;
+  text-align: center;
+  margin: 1em 0; }
+  @media screen and (max-width: 900px) {
+    .instructions {
+      font-size: 1.2em; } }
 
 .entryArea {
   margin: 0;
@@ -70,6 +85,13 @@ html, body {
     width: 400px;
     height: 600px;
     background-color: #4a4a4a; }
+    @media screen and (max-width: 1100px) and (min-width: 900px) {
+      .entryArea img {
+        width: 300px;
+        height: 500px; } }
+    @media screen and (max-width: 900px) {
+      .entryArea img {
+        display: none; } }
   .entryArea textarea {
     display: inline-block;
     padding: 16px;
@@ -80,6 +102,14 @@ html, body {
     color: #ddd;
     font-family: 'Droid Sans Mono', monospace;
     border: none; }
+    @media screen and (max-width: 1100px) and (min-width: 900px) {
+      .entryArea textarea {
+        width: 300px;
+        height: 500px; } }
+    @media screen and (max-width: 900px) {
+      .entryArea textarea {
+        width: 100%;
+        height: 500px; } }
     .entryArea textarea:focus {
       outline: #fff auto 2px; }
 
@@ -96,9 +126,27 @@ html, body {
     color: #fff;
     transition: 0.7s; }
 
+.errInvalidJSON {
+  background-color: #2e02b3;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  display: block;
+  margin: 0 auto;
+  font: normal 1.3em/1em 'Droid Sans Mono', monospace; }
+
+.jsonLint {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px; }
+
 .interpretation {
-  padding: 5em;
-  overflow-x: scroll; }
+  padding: 5em; }
+  @media screen and (max-width: 900px) {
+    .interpretation {
+      padding: 0.5em; } }
 
 .string p {
   background-color: #8d1da8;

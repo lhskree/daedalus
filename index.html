@@ -7,6 +7,7 @@
         <title>Daedalus</title>
     
         <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Forum' rel='stylesheet' type='text/css'>
@@ -25,14 +26,15 @@
     <body>
         
         <h1 class='title'>Daedalus</h1>
-            <div class='entryArea'>
-                <img src='./lebrun_daedalus.jpg' alt='Daeduls affixes wax wings to his son, Icarus, in a painting by Charles le Brun'>
-                <textarea></textarea><br>
-            </div>
+        <p class='instructions'>Even master architects need some visualization. Enter some JSON and Daedalus will produce an interactive visual interpretation.</p>
+        <div class='entryArea'>
+            <img src='./lebrun_daedalus.jpg' alt='Daeduls affixes wax wings to his son, Icarus, in a painting by Charles le Brun'>
+            <textarea></textarea><br>
+        </div>
         <button class='submit'>Interpret JSON</button>
         
         <span class='errInvalidJSON'>Looks like your JSON isn't valid...maybe this can help?</span>
-        <iframe class='jsonLint' src='http://jsonlint.com/'></iframe>
+        <iframe class='jsonLint' src='http://jsonlint.com/' seamless sandbox='allow-forms allow-scripts'></iframe>
         
         <div class='interpretation'>
         </div>

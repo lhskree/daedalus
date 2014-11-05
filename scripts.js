@@ -2,8 +2,11 @@ var json = "";
 
 $( document ).ready( function () {
     var $interpret = $( '.interpretation' );
-    var $linter = $( '.jsonLin' );
+    var $linter = $( '.jsonLint' );
     var $errMsg = $( '.errInvalidJSON');
+    
+    $linter.hide();
+    $errMsg.hide();
     
     $( '.submit' ).click( function (evt) {
         json = $( 'textarea' ).val();
@@ -14,6 +17,9 @@ $( document ).ready( function () {
             
             // If no error
             var currentDepth = 1;
+            // Hide the error message (if the previous attempt threw an error)
+            $errMsg.fadeOut('slow');
+            $linter.slideUp('slow');
             
             var interpretJSON = function (obj, depth) {
 
@@ -52,8 +58,10 @@ $( document ).ready( function () {
             
             interpretJSON(json, currentDepth);
         }
+        // Catch syntax error (invalid JSON)
         catch (err) {
-            console.log(err);   
+            $errMsg.fadeIn('slow');
+            $linter.slideDown('slow');
         }
     });
     
