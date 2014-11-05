@@ -6,46 +6,46 @@
 
 /* Indentation classes */
 .depth-1 {
-  padding-left: 100px; }
+  padding-left: 45px; }
 
 .depth-2 {
-  padding-left: 200px; }
+  padding-left: 45px; }
 
 .depth-3 {
-  padding-left: 300px; }
+  padding-left: 45px; }
 
 .depth-4 {
-  padding-left: 400px; }
+  padding-left: 45px; }
 
 .depth-5 {
-  padding-left: 500px; }
+  padding-left: 45px; }
 
 .depth-6 {
-  padding-left: 600px; }
+  padding-left: 45px; }
 
 .depth-7 {
-  padding-left: 700px; }
+  padding-left: 45px; }
 
 .depth-8 {
-  padding-left: 800px; }
+  padding-left: 45px; }
 
 .depth-9 {
-  padding-left: 900px; }
+  padding-left: 45px; }
 
 .depth-10 {
-  padding-left: 1000px; }
+  padding-left: 45px; }
 
 .depth-11 {
-  padding-left: 1100px; }
+  padding-left: 45px; }
 
 .depth-12 {
-  padding-left: 1200px; }
+  padding-left: 45px; }
 
 .depth-13 {
-  padding-left: 1300px; }
+  padding-left: 45px; }
 
 .depth-14 {
-  padding-left: 1400px; }
+  padding-left: 45px; }
 
 /* End indentation classes */
 html, body {
@@ -148,31 +148,31 @@ html, body {
     .interpretation {
       padding: 0.5em; } }
 
-.string p {
+.string > p {
   background-color: #8d1da8;
   color: black; }
 
-.number p {
+.number > p {
   background-color: #8a7bdd;
   color: #130d32; }
 
-.boolean p {
+.boolean > p {
   background-color: #4506fc;
   color: black; }
 
-.array p {
+.array > p {
   background-color: #d09a15;
   color: black; }
 
-.object p {
+.object > p {
   background-color: #ffdb41;
   color: #272000; }
 
-.null p {
+.null > p {
   background-color: #ababab;
   color: #1f1f1f; }
 
-.undefined p {
+.undefined > p {
   background-color: #777;
   color: black; }
 

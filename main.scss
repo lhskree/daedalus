@@ -10,7 +10,7 @@ $color-und: #777;
 // Mixins
 
 @mixin object($background: "#000") {
-    p {
+    & > p {
         background-color: #{$background};
         color: darken($background, 55%);
     }
@@ -32,7 +32,7 @@ $color-und: #777;
 /* Indentation classes */
 @for $i from 1 to 15 {
     .depth-#{$i} {
-        padding-left: $i * 100px;   
+        padding-left: 45px;   
     }
 }
 /* End indentation classes */
