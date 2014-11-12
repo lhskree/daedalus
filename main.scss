@@ -13,6 +13,7 @@ $color-und: #777;
     & > p {
         background-color: #{$background};
         color: darken($background, 55%);
+        cursor: pointer;
     }
 }
 
