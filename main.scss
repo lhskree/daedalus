@@ -9,11 +9,14 @@ $color-und: #777;
 
 // Mixins
 
-@mixin object($background: "#000") {
+@mixin object($background: "#000", $cursor: "default") {
     & > p {
         background-color: #{$background};
         color: darken($background, 55%);
-        cursor: pointer;
+        cursor: #{$cursor};
+        &:hover {
+            background-color: lighten($background, 17%);   
+        }
     }
 }
 
@@ -117,6 +120,7 @@ body {
     display: block;
     margin: 2em auto;
     background-color: #eee;
+    border-radius: 10px;
     border: none;
     transition: .7s;
     &:hover {
@@ -169,11 +173,11 @@ body {
 }
 
 .array {
-    @include object($color-arr);
+    @include object($color-arr, "pointer");
 }
 
 .object {
-    @include object($color-obj)
+    @include object($color-obj, "pointer")
 }
 
 .null {
@@ -182,4 +186,9 @@ body {
 
 .undefined {
     @include object($color-und)
+}
+
+.legend div p {
+    padding: none;
+    margin: .5em auto;
 }
